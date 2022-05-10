@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samantha Rojas-Contacto</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="shortcut icon" href="./IMAGENES/favicon-32x32.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <h1 class="nombre-sitio">Samantha milagros rojas cardenas</h1>
+    </header>
+    <main>
+        <div class="contenedor-navegacion">
+            <nav class="navegacion-principal contenedor">
+                <a href="./inicio.html">Inicio</a>
+                <a href="./nosotros.html">Nosotros</a>
+                <a href="./galeria.html">Galeria</a>
+                <a href="./nuestroblog.html">Nuestro Blog</a>
+                <a href="./contacto.html">Contacto</a>
+            </nav>
+        </div>
+
+
+
+        <main class="contenido-principal contenedor">
+            <h2 class="text-center">Contacto</h2>
+            <form class="formulario">
+                <fieldset>
+                    <legend>Tus Datos</legend>
+                    <div class="campo">
+                        <label for="nombre">Nombre:</label>
+                        <input id="nombre" type="text" placeholder="Nombre" required />
+                    </div>
+                    <div class="campo">
+                        <label for="asunto">Asunto:</label>
+                        <input id="asunto" type="text" placeholder="Tu asunto" required />
+                    </div>
+                    <div class="campo">
+                        <label for="email">E-mail:</label>
+                        <input id="email" type="text" placeholder="E-mail" required />
+                    </div>
+                    <div class="campo">
+                        <label for="tel">Telefono:</label>
+                        <input id="tel" type="tel" placeholder="Telefono" required />
+                    </div>
+                    <div class="campo">
+                        <label for="fecha">Fecha de Nacimiento:</label>
+                        <input id="fecha" type="datetime-local" placeholder="Fecha de Naciemnto" required />
+                    </div>
+                    <div class="campo">
+                        <label for="tel">Mensaje:</label>
+                        <textarea cols="20" rows="20"></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Pais</legend>
+                    <div class="campo">
+                        <label for="pais">Pais</label>
+                        <select id="pais">
+                            <option>--Seleccione--</option>
+                            <option value="CO">Colombia</option>
+                            <option value="VE">Venezuela</option>
+                            <option value="CL">Chile</option>
+                            <option value="NC">Nicaragua</option>
+                            <option value="MX">Mexico</option>
+                            <option value="PG">Paraguay</option>
+                            <option value="UG">Uruguay</option>
+                            <option value="BS">Brasil</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Informacion Extra</legend>
+                    <div class="campo">
+                        <label for="cliente">Cliente</label>
+                        <input id="cliente" type="radio" name="tipo" value="cliente">
+                    </div>
+
+                    <div class="campo">
+                        <label for="proveedor">Proveedor</label>
+                        <input id="proveedor" type="radio" name="tipo" value="proveedor">
+                    </div>
+                    <div class="campo">
+                        <label for="categoria">Categoria de Interes
+                        </label>
+                        <input list="categorias" name="categorias">
+                        <datalist id="categorias">
+                            <option value="Trajes de Baño">
+                            <option value="Vestidos">
+                            <option value="Balacas">
+                            <option value="Turbantes">
+                            <option value="Bragas">
+                            <option value="Gorros Navideños">
+                            <option value="Enterizos">
+                            <option value="Medias">
+                    </div>
+                </fieldset>
+                <input class="boton" type="submit" value="Enviar Formulario">
+
+            </form>
+
+        </main>
+
+        <footer class="site-footer">
+            <div class="grid-footer contenedor">
+                <div>
+                    <h3>Sobre nosotros</h3>
+                    <nav class="footer-menu">
+                        <p>Somos una hermosa familia, que todos los dias le pedimos a Dios que nos de salud para poder
+                            cumplir
+                            todos nuestros anhelos.</p>
+                    </nav>
+                </div>
+                <div>
+                    <h3>Nuestras mascotas</h3>
+                    <nav class="footer-menu">
+                        <p>Aatrox</p>
+                        <p>Apolo</p>
+                        <p>Coco</p>
+                    </nav>
+                </div>
+                <div>
+                    <h3>Mi casa</h3>
+                    <nav class="footer-menu">
+                        <P>En ella soy feliz, es el mejor lugar de todo el mundo.</P>
+                    </nav>
+                </div>
+            </div>
+
+            <p class="copyright"> Hija mia, tus papitos te aman.</p>
+
+        </footer>
+</body>
+
+</html>

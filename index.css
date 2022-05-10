@@ -1,0 +1,619 @@
+html{
+    box-sizing: border-box;
+        font-size: 62.5%; /*1REM-10PX*/
+}
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+h1{
+    font-size: 4rem;
+    color:rgba(255, 0, 0, 0.784);
+}
+
+@media (min-width: 768px) { 
+    h1{
+    font-size: 4rem;
+    color:rgba(255, 0, 0, 0.784);
+}
+
+}
+
+body{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+.nombre-sitio{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+.contenedor-navegacion{
+    border-top: .1rem solid white;  
+    font-size: 1.5rem;  
+}
+
+.navegacion-principal{
+    border-color: rgba(89, 86, 86, 0.405);
+    border-top-style: solid;
+    border-width: .1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) { 
+  .navegacion-principal{
+    justify-content: space-between; 
+    flex-direction: row; 
+}  
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.contenedor{
+max-width: 120rem;
+margin: 0 auto;
+}
+.hero {
+background-image: url(../IMAGENES/iniciomatrimonio.jpg);
+background-size: cover;
+height: 55rem;
+background-position: center center;
+height: 20rem;
+}
+
+@media (min-width: 768px) { 
+    .hero {
+     height: 55rem;
+}
+}
+/*mis papitos*/
+.categorias h2 {
+text-align: center;
+padding: 2rem;
+margin: 0 auto;
+}
+
+.categoria p{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.categoria img{
+width: 100%;
+}
+
+.categoria{
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) { 
+    .todos-categorias{ 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    height: 550px;
+}
+}
+
+@media (min-width: 768px) { 
+    .categoria{
+        margin-bottom: 0;
+    }
+}
+/*bloque nosotros*/
+.sobre-nosotros{
+      background-image: linear-gradient( to bottom, transparent 50%,
+      #ff1493 50%, #ff1493 100% ), url(./IMAGENES/lostres.jpg);
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: 100%, 70rem;
+      padding: 1rem;
+}
+
+@media (min-width: 768px) { 
+    .sobre-nosotros{
+      background-image: linear-gradient( to right, transparent 50%,
+      #ff1493 50%, #ff1493 100% ), url(./IMAGENES/lostres.jpg);
+      background-position: left center;
+      padding: 10rem;
+      background-size: 100%, 100rem;
+}
+}
+.mi-historia-grid{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+@media (min-width: 768px) { 
+    .mi-historia-grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: unset;
+        column-gap: 10rem;              
+    }
+}
+.texto-nosotros{
+  grid-row: 2 / 3;
+  font-size: 2rem;
+  color: rgb(241, 233, 233);
+  padding: 0;
+  
+}
+
+@media (min-width: 768px) { 
+    .texto-nosotros{
+  grid-column: 2 / 3;
+}
+
+}
+/*mi familia*/
+
+.mi-familia{
+     background-image: linear-gradient(to bottom, transparent 50%, white 50%, white 100% ), url(./IMAGENES/MIFAMILIA.jpg);
+     background-repeat: no-repeat;
+     background-size: 100%,  70rem;
+     background-position: top center;
+     margin: 5rem 0;
+}
+
+@media (min-width: 768px) { 
+    .mi-familia{
+      background-image: linear-gradient(to left, transparent 50%, white 50%, white 100% ), url(./IMAGENES/MIFAMILIA.jpg);
+      background-position: right center;
+      padding: 10rem;
+      background-size: 100%, 80rem;
+}
+}
+.mi-familia a{
+    display:contents;
+    text-align: left;
+}
+.mi-familia-grid{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+@media (min-width: 768px) { 
+    .enlace-familia{
+  grid-column: 1 / 2;
+}
+}
+.enlace-familia{
+  grid-row: 2 / 3;
+  font-size: 2rem;
+  text-align: center;
+  padding: 0;
+}
+.mi-familia h3{
+    text-decoration: underline;
+    color: rgb(5, 123, 84);
+}
+@media (min-width: 768px) { 
+    .mi-familia-grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: unset;
+        column-gap: 10rem;              
+    }
+    }
+
+.meses-rojo { 
+text-decoration: none;
+font-size: 2.5rem;
+color: rgb(255, 0, 0);
+font-weight: bold;
+}
+
+.meses-naranja { 
+text-decoration: none;
+color: rgb(213, 61, 6);
+font-size: 2.5rem;
+font-weight: bold;
+}
+
+.meses-amarillo { 
+text-decoration: none;
+color: rgb(217, 217, 17);
+font-size: 2.5rem;
+font-weight: bold;
+}
+
+.meses-verde { 
+text-decoration: none;
+color: rgb(144, 233, 12);
+font-size: 2.5rem;
+font-weight: bold;
+}
+
+.meses-fucsia { 
+text-decoration: none;
+color:rgb(221, 32, 221);
+font-weight: bold;
+font-size: 2.5rem;
+}
+.meses-purpura {
+text-decoration: none;
+color:purple;
+font-weight: bold;
+font-size: 2.5rem;
+}
+
+.img {
+     max-width: 100%;
+     display: block;
+}
+/*mi crecimiento*/
+.categorias h3{
+    padding: 1rem 0;
+    text-align: center;
+    color: rgb(111, 38, 151);
+}
+.categoria a { 
+  text-align: center;
+  display: block;
+  padding: 1rem;
+  font-size: 2rem;
+  color: rgb(156, 18, 64); 
+}
+
+.categoria a:hover {
+    background-color: #ff1493;
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    transition: background-color .3s ease-out;
+}
+
+@media (min-width: 768px) { 
+    .listado-categorias{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 100%;
+    height: 45rem;
+    object-fit: cover;
+}
+}
+
+/*muecas*/
+
+@media (min-width: 768px) { 
+    .muecas-categorias{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 40rem;
+    width: 100%;
+    object-fit: cover;
+    gap: 2rem;
+}
+}
+.centradito{ 
+text-align: center;
+color: rgb(59, 113, 5);
+text-decoration: underline;
+}
+
+h2, h3{
+    font-size: 3rem;
+}
+@media (min-width: 768px) { 
+  h2, h3{
+    font-size: 3rem;
+}  
+}
+
+.centraditos{ 
+text-align: center;
+color: rgb(37, 5, 113);
+text-decoration: underline;
+}
+
+h1, h2, h3{
+    margin: 0 0 3rem 0;
+}
+
+@media (min-width: 768px) { 
+    h1, h2, h3{
+    margin: 0 0 3rem 0;
+}
+}
+
+.precio{
+    ont-weight: bold;
+}
+.centro{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 7rem;
+}
+
+/*utilidades*/
+.text-center{
+    text-align: center;
+    font-size: 4rem;
+    color: rgb(198, 198, 8);
+}
+
+.max-width-30{
+    max-width: 30rem;
+}
+/*listado de precio*/
+.contenido-principal{
+    padding-top: 5rem;
+}
+.producto{
+background-color: #ff1493;
+margin-bottom:  2rem;
+}
+
+@media (min-width: 768px) { 
+    .producto{
+   margin-bottom:  0;
+}
+}
+
+.producto:last-of-type{
+    margin-bottom: 0;
+}
+.texto-producto {
+text-align: center;
+color: white;
+padding: 2rem;
+}
+.texto-producto h3 {
+margin: 0;
+}
+.texto-producto p{
+    margin: 0 0 .5rem 0;
+}
+.texto-producto .precio {
+font-size: 2.8rem;
+font-weight: 700;
+}
+/*boton*/
+.texto-producto a {
+background-color:rgb(98, 202, 206);
+display: block;
+color: rgb(105, 7, 35);
+text-transform: uppercase;
+font-weight: 700;
+padding: 1rem;
+transition: background-color .3s ease-out;
+}
+.texto-producto a:hover{
+    background-color:aqua;
+}
+@media (min-width: 768px) { 
+    .listado-productos{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+}
+.producto:nth-child(1) {
+grid-column-start: 1;
+grid-column-end: 7;
+display: grid;
+grid-template-columns: 3fr 1fr;
+}
+.producto:nth-child(2) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.producto:nth-child(3) {
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+.producto:nth-child(4) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.producto:nth-child(5) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.producto:nth-child(6) {
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+}
+.producto:nth-child(1) img{
+    height: 65rem;
+    width: 100%;
+    object-fit: cover;
+}
+.producto:nth-child(2) img,
+.producto:nth-child(3) img
+{   height: 50rem;
+    width: 100%;
+    object-fit: cover;
+}
+.producto:nth-child(4) img,
+.producto:nth-child(5) img,
+.producto:nth-child(6) img{
+    height: 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+.site-footer h3{
+    margin-bottom: .5rem;
+    text-align: center;
+}
+
+.site-footer{
+    border-top: 1px solid rgba(89, 86, 86, 0.753);
+    margin-top: 5rem;
+    padding: 5rem;
+}
+
+@media (min-width: 768px) { 
+  .grid-footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}  
+}
+
+.footer-menu{
+display: block;
+text-align: center;
+}
+
+.copyright{
+    text-align: center;
+    margin-top: 5rem;
+    font-weight: bold;
+    color: red;
+}
+/*Nosotros*/
+.contenido-nosotros{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat(auto-fit, minmax( 25rem, 1fr) );
+    column-gap: 5rem;
+    
+}
+
+.informacion-nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem 0;
+}
+/*blog*/
+
+@media (min-width: 768px) { 
+    .contenedor-blog{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 4rem;
+}
+}
+
+.entrada{
+    border-bottom: 2px solid rgba(89, 86, 86, 0.405);
+    margin-bottom: 2rem;
+    padding: 2rem 2rem 4rem 2rem;
+}
+.entrada:last-of-type {
+  border: none;
+}
+.enlaces{
+    color: #ff1493;
+}
+@media (min-width: 768px) { 
+    .entrada-meta {
+    display: flex;
+    justify-content: space-between;
+}
+}
+
+.entrada-meta p {
+    font-weight: 700;
+}
+.entrada-meta span {
+     color: #ff1493; 
+}
+.boton {
+background-color:rgb(98, 202, 206);
+display: block;
+color: black;
+text-transform: uppercase;
+font-weight: 700;
+padding: 1rem;
+transition: background-color .3s ease-out;
+text-align: center;
+border: none;
+width: 100%;
+}
+
+@media (min-width: 768px) { 
+    .boton{
+        width: auto;
+    }
+}
+
+.boton:hover {
+   background-color:aqua;
+   cursor: pointer;
+}
+.contenido-entrada-blog {
+    width: 60rem;
+    margin: 0 auto;
+}
+/*galeria*/
+
+.informacion-galeria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.galeria {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;  
+    justify-items: center;
+    
+
+}
+
+@media (min-width: 768px) { 
+
+     .galeria{ 
+         grid-template-columns: repeat(3, 1fr);
+
+}
+}
+@media (min-width: 768px) { 
+    .galeria img {
+    height: 30rem;
+    width: 30rem;
+}
+}
+.galeria img {
+    height: 40rem;
+    width: 40rem;
+    object-fit: cover;
+}
+/*formulario*/
+.formulario{
+    max-width: 60rem;
+    margin: 0 auto;
+}
+.formulario fieldset{
+    border-color: #ff1457a0;
+    margin-bottom: 2rem;
+}
+.formulario legend {
+    background-color: #ff1493;
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+.campo{
+display: flex;
+margin-bottom: 2rem;
+}
+.campo label{
+flex-basis: 10rem;
+}
+.campo input:not([type="radio"]),
+.campo textarea,
+.campo select{
+    flex: 1;
+    border: 1px solid #ff145773;
+    padding: 1rem;
+}
